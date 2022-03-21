@@ -5,47 +5,47 @@ import sys
 
 pg.init()
 pg.mixer.init()
-pg.mixer.music.load("F://папки//texturesforputinshoooter//creedence-clearwater-revival_-_fortunate-son.mp3")
+pg.mixer.music.load("textures//creedence-clearwater-revival_-_fortunate-son.mp3")
 pg.mixer.music.play()
 clock = pg.time.Clock()
 dis = pg.display.set_mode((800, 600))
 
-bgimg = pg.image.load("F://папки//texturesforputinshoooter//1548706982174921911.png")
+bgimg = pg.image.load("textures//1548706982174921911.png")
 bgimg = pg.transform.scale(bgimg, (800, 600))
 
-guk_img = pg.image.load("F://папки//texturesforputinshoooter//guk.png")
+guk_img = pg.image.load("textures//guk.png")
 guk_img = pg.transform.scale(guk_img, (70, 70))
 
-boss_img = pg.image.load("F://папки//texturesforputinshoooter//boss.png")
+boss_img = pg.image.load("textures//boss.png")
 boss_img = pg.transform.scale(boss_img, (110, 70))
 
-tree_img = pg.image.load("F://папки//texturesforputinshoooter//tree1.png")
+tree_img = pg.image.load("textures//tree1.png")
 tree_img = pg.transform.scale(tree_img, (90, 160))
 
-player_img = pg.image.load("F://папки//texturesforputinshoooter//test1.png")
+player_img = pg.image.load("textures//test1.png")
 player_img = pg.transform.scale(player_img, (300, 130))
-player_img_temp = pg.image.load("F://папки//texturesforputinshoooter//test1.png")
+player_img_temp = pg.image.load("textures//test1.png")
 player_img_temp = pg.transform.scale(player_img, (300, 130))
 
-bomb_img = pg.image.load("F://папки//texturesforputinshoooter//bomb1.png")
+bomb_img = pg.image.load("textures//bomb1.png")
 bomb_img = pg.transform.scale(bomb_img, (11, 23))
 
-grass_img = pg.image.load("F://папки//texturesforputinshoooter//grass.png")
+grass_img = pg.image.load("textures//grass.png")
 grass_img = pg.transform.scale(grass_img, (800, 100))
 
-napalm_img = pg.image.load("F://папки//texturesforputinshoooter//napalm1.png")
+napalm_img = pg.image.load("textures//napalm1.png")
 napalm_img = pg.transform.scale(napalm_img, (100, 70))
 
-rpg_img = pg.image.load("F://папки//texturesforputinshoooter//rpg.png")
+rpg_img = pg.image.load("textures//rpg.png")
 rpg_img = pg.transform.scale(rpg_img, (60, 11))
 
-rpg_img_temp = pg.image.load("F://папки//texturesforputinshoooter//rpg.png")
+rpg_img_temp = pg.image.load("textures//rpg.png")
 
-boom_img = pg.image.load("F://папки//texturesforputinshoooter//boom1.png")
+boom_img = pg.image.load("textures//boom1.png")
 boom_img = pg.transform.scale(boom_img, (270, 150))
 
-font = pg.freetype.Font('F://папки//texturesforputinshoooter//GenJyuuGothicX-Bold.ttf', 80)
-scorefont = pg.freetype.Font('F://папки//texturesforputinshoooter//GenJyuuGothicX-Bold.ttf', 20)
+font = pg.freetype.Font('textures//GenJyuuGothicX-Bold.ttf', 80)
+scorefont = pg.freetype.Font('textures//GenJyuuGothicX-Bold.ttf', 20)
 text, _ = font.render("You lose!", (255, 0, 0))
 score = 0
 
